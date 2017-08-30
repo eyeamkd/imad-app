@@ -9,9 +9,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 }); 
 app.get('/article-one',function(req,res){ 
-    res.send("KUNAL'S WEB APP HAS A ARTICLE ONE");
+    res.send("KUNAL'S WEB APP HAS An ARTICLE ONE");
 });
-
+app.get('/article-two',function(req,res){ 
+    res.send("KUNAL'S WEB APP HAS An ARTICLE TWO");
+}); 
+app.get('/article-three',function(req,res){ 
+    res.send("KUNAL'S WEB APP HAS An ARTICLE THREE");
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
